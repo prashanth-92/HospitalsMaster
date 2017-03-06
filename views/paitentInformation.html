@@ -1,0 +1,157 @@
+<section class="content-header">
+  <h1>
+	Paitent Information
+	<small>Enrolment</small>
+  </h1>
+</section>
+<section class="content">
+  <div class="row">
+	<div class="col-md-12">
+	  <div class="box">
+		<div class="box-header with-border">
+		  <h3 class="box-title">Enrol Paitent</h3>
+		</div>
+		<div class="box-body">
+		  <div class="row">
+			<div class="col-xs-3">
+				<label style="float:left;"> Paitent ID </label>
+			</div>
+			<div class="col-xs-3" ng-bind = "data.id">
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> Address </label>
+			</div>
+			<div class="col-xs-3">
+				<textarea style="float:left;" class="form-control" placeholder="Enter paitent address" ng-value="data.address"></textarea>
+			</div>
+		  </div>
+		  <br/>
+		  <div class="row">
+			<div class="col-xs-3">
+				<label style="float:left;"> Name </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter paitent Name" ng-value="data.name"> </input>
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> Country </label>
+			</div>
+			<div class="col-xs-3">
+				<select style="float:left;" class="form-control">
+					<option>India</option>
+					<option>US</option>
+					<option>UK</option>
+				</select>
+			</div>
+		  </div>
+		   <br/>
+		  <div class="row">
+			<div class="col-xs-3">
+				<label style="float:left;"> Father's Name </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter paitent's father Name" ng-value="data.fathername"> </input>
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> State </label>
+			</div>
+			<div class="col-xs-3">
+				<select style="float:left;" class="form-control" ></select>
+			</div>
+		  </div>
+		  <br/>
+		  <div class="row">
+			<div class="col-xs-1">
+				<label style="float:left;"> DOB </label>
+			</div>
+			<div class="col-xs-2">
+				<input style="float:left;" class="form-control" type="text" placeholder="DD/MM/YYYY" ng-value= "data.dob"> </input>
+			</div>
+			<div class="col-xs-1">
+				<label style="float:left;"> Gender </label>
+			</div>
+			<div class="col-xs-2">
+				<select style="float:left;" class="form-control">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> City </label>
+			</div>
+			<div class="col-xs-3">
+				<select style="float:left;" class="form-control"></select>
+			</div>
+		  </div>
+		  <br/>
+		  <div class="row">
+			<div class="col-xs-1">
+				<label style="float:left;"> Marital Status </label>
+			</div>
+			<div class="col-xs-2">
+				<select style="float:left;" class="form-control">
+					<option value="Married">Married</option>
+					<option value="Unmarried">Unmarried</option>
+				</select>
+			</div>
+			<div class="col-xs-1">
+				<label style="float:left;"> Religion </label>
+			</div>
+			<div class="col-xs-2">
+				<input style="float:left;" class="form-control" type="text" placeholder="Religion" ng-value="data.relegion"> </input>
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> Pin Code </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter pin code" ng-value="data.pincode"> </input>
+			</div>
+		  </div>
+		  <br/>
+		  <div class="row">
+			<div class="col-xs-3">
+				<label style="float:left;"> Occupation </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter Occupation" ng-value="data.occupation"> </input>
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> Email </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter Email" ng-value="data.email"> </input>
+			</div>
+		  </div>
+		  <br/>
+		  <div class="row">
+			<div class="col-xs-3">
+				<label style="float:left;"> Mobile Number </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter Mobile Number" ng-value="data.mobile"> </input>
+			</div>
+			<div class="col-xs-3">
+				<label style="float:left;"> Home Number </label>
+			</div>
+			<div class="col-xs-3">
+				<input style="float:left;" class="form-control" type="text" placeholder="Enter Home Number" ng-value="data.homephone"> </input>
+			</div>
+		  </div>
+		</div>
+		<div class="box-footer">
+		  <div class="row">
+			<div class="col-xs-10">
+			</div>
+			<div class="col-xs-1">
+				<button style="float:right" class="btn btn-default" type= "button" ng-click="cancel()"> Cancel</button>
+			</div>
+			<div class="col-xs-1">
+				<button style="float:right" class="btn btn-success" type= "button" ng-click="save()">Save</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+      
+</section>

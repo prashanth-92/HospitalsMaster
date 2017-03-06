@@ -1,0 +1,57 @@
+<section class="content-header">
+	<h1>
+		Paitent Information
+	</h1>
+</section>
+<section class="content">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="box">
+				<section class="content">
+					<div class="box-header with-border">
+						<h3 class="box-title">Paitent Details</h3>
+						<span style="float:right"><button class="btn btn-primary" type= "button" ng-click="addPaitent()">+ Add</button></span>
+					</div>
+					<div class="box-body">
+						<div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+							<div class="row">
+								<div class="col-sm-12">
+									<table id="table1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
+										<thead>
+											<tr role="row">
+												<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Rendering engine: activate to sort column ascending" style="width: 295px;">
+													Paitent ID
+												</th>
+												<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 361px;">
+													Paitent Name
+												</th>
+												<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 321px;">
+													Date of Birth
+												</th>
+												<th class="sorting_desc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" aria-sort="descending" style="width: 255px;">
+													Phone Number
+												</th>
+												<th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 190px;">
+													Action
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr ng-repeat="datum in data track by $index"  on-finish-render="ngRepeatFinished" ng-class="{0:'even',1:'odd'}[index%2]">
+												<td ng-bind = "datum.id"></td>
+												<td ng-bind = "datum.name"></td>
+												<td ng-bind = "datum.dob"></td>
+												<td ng-bind = "datum.mobile"></td>
+												<td><a href="#paitentInformation/{{datum.id}}"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+</section>
